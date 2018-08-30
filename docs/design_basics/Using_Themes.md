@@ -11,3 +11,13 @@
       child: new Icon(Icons.add)
       )
    )
+
+   使用主题
+
+   new Container(
+      color: Theme.of(context).accentColor,
+      child: new Text(
+         'Text with a background color',
+         style: Theme.of(context).textTheme.title,
+      )
+   )
