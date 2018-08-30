@@ -17,14 +17,14 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.cyan[600],
       ),
       home: Home(),
-      routes: <String,WidgetBuilder>{
-         '/using_themes_page': (BuildContext context) => UsingThemes(title: 'Using Themes',),
+      routes: <String, WidgetBuilder>{
+        '/using_themes_page': (BuildContext context) => UsingThemes(
+              title: 'Using Themes',
+            ),
       },
     );
   }
 }
-
-
 
 //import 'package:flutter/material.dart';
 //

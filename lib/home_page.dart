@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning/commons/simple_card.dart';
 
-
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -29,15 +28,11 @@ class _HomeState extends State<Home> {
                 icon: Icons.tag_faces,
                 iconColor: Colors.red,
                 backgroundColor: Colors.white,
-                onTap: (){
+                onTap: () {
                   Navigator.of(context).pushNamed('/using_themes_page');
                 },
               ),
-
-              SimpleCard(
-
-              ),
-
+              SimpleCard(),
             ],
           ),
         ),

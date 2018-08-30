@@ -39,18 +39,18 @@ class SimpleCard extends StatelessWidget {
 
   const SimpleCard(
       {Key key,
-        this.prefixBadge,
-        this.suffixBadge,
-        this.icon,
-        this.suffixIcon,
-        this.iconColor,
-        this.suffixIconColor,
-        this.title,
-        this.description,
-        this.onTap,
-        this.backgroundColor,
-        this.titleColor,
-        this.decriptionColor})
+      this.prefixBadge,
+      this.suffixBadge,
+      this.icon,
+      this.suffixIcon,
+      this.iconColor,
+      this.suffixIconColor,
+      this.title,
+      this.description,
+      this.onTap,
+      this.backgroundColor,
+      this.titleColor,
+      this.decriptionColor})
       : super(key: key);
 
   @override
@@ -67,26 +67,26 @@ class SimpleCard extends StatelessWidget {
             children: <Widget>[
               (this.prefixBadge != null)
                   ? Container(
-                color: this.prefixBadge,
-                width: 10.0,
-                height: 60.0,
-              )
+                      color: this.prefixBadge,
+                      width: 10.0,
+                      height: 60.0,
+                    )
                   : Container(),
               (this.icon != null)
                   ? Container(
-                margin: EdgeInsets.all(5.0),
-                width: 50.0,
-                height: 50.0,
-                child: Icon(
-                  this.icon,
-                  color: (this.iconColor != null)
-                      ? this.iconColor
-                      : Colors.black,
-                ),
-              )
+                      margin: EdgeInsets.all(5.0),
+                      width: 50.0,
+                      height: 50.0,
+                      child: Icon(
+                        this.icon,
+                        color: (this.iconColor != null)
+                            ? this.iconColor
+                            : Colors.black,
+                      ),
+                    )
                   : Container(
-                margin: EdgeInsets.only(left: 20.0),
-              ),
+                      margin: EdgeInsets.only(left: 20.0),
+                    ),
               Expanded(
                 child: Container(
                   child: Column(
@@ -94,29 +94,29 @@ class SimpleCard extends StatelessWidget {
                     children: <Widget>[
                       (this.title != null)
                           ? Container(
-                        child: Text(
-                          this.title,
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15.0,
-                              color: (this.titleColor != null)
-                                  ? this.titleColor
-                                  : Colors.black),
-                        ),
-                      )
+                              child: Text(
+                                this.title,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 15.0,
+                                    color: (this.titleColor != null)
+                                        ? this.titleColor
+                                        : Colors.black),
+                              ),
+                            )
                           : Container(),
                       (this.description != null)
                           ? Container(
-                        child: Text(
-                          this.description,
-                          style: TextStyle(
-                              fontWeight: FontWeight.w100,
-                              fontSize: 10.0,
-                              color: (this.decriptionColor != null)
-                                  ? this.decriptionColor
-                                  : Colors.grey),
-                        ),
-                      )
+                              child: Text(
+                                this.description,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w100,
+                                    fontSize: 10.0,
+                                    color: (this.decriptionColor != null)
+                                        ? this.decriptionColor
+                                        : Colors.grey),
+                              ),
+                            )
                           : Container(),
                     ],
                   ),
@@ -125,20 +125,22 @@ class SimpleCard extends StatelessWidget {
               ),
               (this.suffixIcon != null)
                   ? Container(
-                margin: EdgeInsets.only(right: 10.0),
-                child: Icon(
-                  this.suffixIcon,
-                  color: (this.suffixIconColor != null)
-                      ? this.suffixIconColor
-                      : Colors.black,
-                ),
-              )
+                      margin: EdgeInsets.only(right: 10.0),
+                      child: Icon(
+                        this.suffixIcon,
+                        color: (this.suffixIconColor != null)
+                            ? this.suffixIconColor
+                            : Colors.black,
+                      ),
+                    )
                   : Container(),
-              (this.suffixBadge!= null)?Container(
-                color: this.suffixBadge,
-                width: 10.0,
-                height: 60.0,
-              ):Container()
+              (this.suffixBadge != null)
+                  ? Container(
+                      color: this.suffixBadge,
+                      width: 10.0,
+                      height: 60.0,
+                    )
+                  : Container()
             ],
           ),
         ),
