@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/design_basics/custom_fonts_page.dart';
 import 'package:learning/design_basics/snackBar_page.dart';
 import 'package:learning/design_basics/tabs_page.dart';
 import 'package:learning/design_basics/using_themes_page.dart';
@@ -10,10 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appName = 'Custom Theme';
-
     return MaterialApp(
       title: appName,
       theme: ThemeData(
+        //设置为默认字体
+        fontFamily: 'RobotoMono',
         brightness: Brightness.dark,
         primaryColor: Colors.lightBlue[800],
         accentColor: Colors.cyan[600],
@@ -24,7 +26,8 @@ class MyApp extends StatelessWidget {
               title: 'Using Themes',
             ),
         '/snackBar_page': (BuildContext context) => SnackBarPage(title:'Display SnackBar'),
-        '/tabs_page': (BuildContext context) => TabsPage(title: 'Tabs demo',)
+        '/tabs_page': (BuildContext context) => TabsPage(title: 'Tabs demo',),
+        '/custom_fonts_page': (BuildContext context) => CustomFontsPage(title: 'Custom Fonts',)
       },
     );
   }
