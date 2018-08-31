@@ -32,7 +32,20 @@ class _HomeState extends State<Home> {
                   Navigator.of(context).pushNamed('/using_themes_page');
                 },
               ),
-              SimpleCard(),
+              SimpleCard(
+                title: '显示SnackBar',
+                decriptionColor: Colors.black26,
+                description: '简短方便的提示用户',
+                titleColor: Colors.black,
+                prefixBadge: Colors.lightGreen[200],
+                suffixBadge: Colors.lightGreen[200],
+                icon: Icons.scanner,
+                iconColor: Colors.lightGreen[200],
+                backgroundColor: Colors.white,
+                onTap: (){
+                  Navigator.of(context).pushNamed('/snackBar_page');
+                },
+              ),
             ],
           ),
         ),

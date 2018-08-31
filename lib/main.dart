@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/design_basics/snackBar_page.dart';
 import 'package:learning/design_basics/using_themes_page.dart';
 import 'package:learning/home_page.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         '/using_themes_page': (BuildContext context) => UsingThemes(
               title: 'Using Themes',
             ),
+        '/snackBar_page': (BuildContext context) => SnackBarPage(title:'Display SnackBar'),
       },
     );
   }
