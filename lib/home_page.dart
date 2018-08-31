@@ -61,6 +61,20 @@ class _HomeState extends State<Home> {
                   Navigator.of(context).pushNamed('/tabs_page');
                 },
               ),
+              SimpleCard(
+                title: 'Custom Fonts',
+                decriptionColor: Colors.black26,
+                description: '切换字体',
+                titleColor: Colors.black,
+                prefixBadge: Colors.lightGreen[200],
+                suffixBadge: Colors.lightGreen[200],
+                icon: Icons.scanner,
+                iconColor: Colors.lightGreen[200],
+                backgroundColor: Colors.white,
+                onTap: (){
+                  Navigator.of(context).pushNamed('/custom_fonts_page');
+                },
+              ),
             ],
           ),
         ),
