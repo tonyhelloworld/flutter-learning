@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
                   Navigator.of(context).pushNamed('/snackBar_page');
                 },
               ),
-              //Tabs
+              ///Tabs
               SimpleCard(
                 title: 'Tabs',
                 decriptionColor: Colors.black26,
@@ -73,6 +73,24 @@ class _HomeState extends State<Home> {
                 backgroundColor: Colors.white,
                 onTap: (){
                   Navigator.of(context).pushNamed('/custom_fonts_page');
+
+                },
+              ),
+              ///Images
+              SimpleCard(
+                title: 'Image',
+                description: 'internets images',
+                titleColor: Colors.black,
+                decriptionColor: Colors.black26,
+                prefixBadge: Colors.red,
+                suffixIcon: Icons.description,
+                suffixIconColor: Colors.red,
+                suffixBadge: Colors.red,
+                icon: Icons.tag_faces,
+                iconColor: Colors.red,
+                backgroundColor: Colors.white,
+                onTap: () {
+                  Navigator.of(context).pushNamed('/web_images_page');
                 },
               ),
             ],

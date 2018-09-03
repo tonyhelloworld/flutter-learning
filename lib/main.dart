@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning/design_basics/custom_fonts_page.dart';
+import 'package:learning/images/web_images_page.dart';
 import 'package:learning/design_basics/snackBar_page.dart';
 import 'package:learning/design_basics/tabs_page.dart';
 import 'package:learning/design_basics/using_themes_page.dart';
@@ -25,9 +26,17 @@ class MyApp extends StatelessWidget {
         '/using_themes_page': (BuildContext context) => UsingThemes(
               title: 'Using Themes',
             ),
-        '/snackBar_page': (BuildContext context) => SnackBarPage(title:'Display SnackBar'),
-        '/tabs_page': (BuildContext context) => TabsPage(title: 'Tabs demo',),
-        '/custom_fonts_page': (BuildContext context) => CustomFontsPage(title: 'Custom Fonts',)
+        '/snackBar_page': (BuildContext context) =>
+            SnackBarPage(title: 'Display SnackBar'),
+        '/tabs_page': (BuildContext context) => TabsPage(
+              title: 'Tabs demo',
+            ),
+        '/custom_fonts_page': (BuildContext context) => CustomFontsPage(
+              title: 'Custom Fonts',
+            ),
+        '/web_images_page': (BuildContext context) => WebImages(
+              title: 'Web Images',
+            )
       },
     );
   }
